@@ -12,7 +12,7 @@
     <% skills.forEach(skill => { %>
       <li>
         <%= skill.type %> (Unit <%= skill.unit %>) - 
-        <%% skill.completed ? 'Completed' : 'Not Complete' %> 
+        <%= skill.completed ? 'Completed' : 'Not Complete' %> 
       </li>
     <% }) %> 
   </ul>
