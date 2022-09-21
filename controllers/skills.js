@@ -1,6 +1,3 @@
-//// import the Skill data
-//// import { skills } from '../data/skill-data.js'
-
 // import the Skill model file
 import { Skill } from '../models/skill.js'
 
