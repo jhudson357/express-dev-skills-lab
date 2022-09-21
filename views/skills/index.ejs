@@ -11,7 +11,8 @@
   <ul>
     <% skills.forEach(skill => { %>
       <li>
-        <%= skill.type %> (Unit <%= skill.unit %>) - 
+        <a href="skills/<%= skill._id %>"><%= skill.type %></a>
+        (Unit <%= skill.unit %>) - 
         <%= skill.completed ? 'Completed' : 'Not Complete' %> 
       </li>
     <% }) %> 
