@@ -5,6 +5,8 @@ const router = Router()
 
 router.get('/', skillsCtrl.index)
 
+router.get('/todos/new', skillsCtrl.new)
+
 export {
   router
 }
