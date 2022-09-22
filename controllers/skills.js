@@ -21,6 +21,7 @@ function newSkill (req, res) {
 
 function create (req, res) {
   // console.log('form info: ', req.body)
+  req.body.completed = !!req.body.completed     // set to true or false depending on if check is there
   Skill.create(req.body)
   .then(skill => {
     res.redirect('/skills')
