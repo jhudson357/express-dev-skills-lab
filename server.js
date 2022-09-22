@@ -20,6 +20,12 @@ app.set(
 )
 app.set('view engine', 'ejs')
 
+// custom middleware  (NOT necessary --> just to show off middleware functionality)
+app.use(function(req, res, next) {
+  req.time = new Date().toLocaleTimeString()
+  next()
+})
+
 // middleware
 app.use(logger('dev'))
 app.use(express.json())
