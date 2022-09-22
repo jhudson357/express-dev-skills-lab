@@ -69,6 +69,7 @@ function edit (req, res) {
 }
 
 function update (req, res) {
+  req.body.completed = !!req.body.completed     // set to true or false depending on if check is there
   Skill.findByIdAndUpdate(req.params.id, req.body, {new: true})
   .then(skill => {
     res.redirect(`/skills/${skill._id}`)

@@ -12,6 +12,7 @@
   <form action="/skills/<%= skill._id %>?_method=PUT" method="post" autocomplete="off">
     <input type="text" name="type" value="<%= skill.type %>"></input>
     <input type="text" name="unit" value="<%= skill.unit %>"></input>
+    <input type="checkbox" name="completed" <%= skill.completed ? 'checked' : '' %> >
     <button type="submit">Save Skill</button>
   </form>
 </body>
